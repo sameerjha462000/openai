@@ -14,19 +14,19 @@ def read_response(response: str) -> str:
 
 
 # helper functions to colorize the text in the terminal
-def bold(text):
+def bold(text:str) -> str:
     bold_start = "\033[1m"
     bold_end = "\033[0m"
     return bold_start + text + bold_end
 
 
-def blue(text):
+def blue(text:str) -> str:
     blue_start = "\033[34m"
     blue_end = "\033[0m"
     return blue_start + text + blue_end
 
 
-def red(text):
+def red(text:str) -> str:
     red_start = "\033[31m"
     red_end = "\033[0m"
     return red_start + text + red_end
